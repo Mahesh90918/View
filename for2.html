@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loops(){
+            const num1= new Array("fgd","Sdfgsdg","fdsgdsg","dfgsdgf");
+            for (let index = 0; index <=num1.length-1; index++) {
+              document.write("hello  :" +num1[index]+"<br>");
+            }
+        }
+        loops();
+    </script>
+    <center>
+     <script>
+        function loops1(){
+            const num1= new Array("fgd","Sdfgsdg","fdsgdsg","dfgsdgf","mahesh");
+            for (let index = 0; index <=num1.length-1; index++) {
+              document.write("hello  :" +num1[index]+"<br>");
+            }
+        }
+       // loops();
+    </script>
+    </center>
+    <script>
+        function loops2(){
+            const num1= ["fgd","Sdfgsdg","fdsgdsg","suresh","mahesh"];
+            for (let index = 0; index <=num1.length-1; index++) {
+              document.write("hello  :" +num1[index]+"<br>");
+            }
+        }
+     //   document.getElementById(loop2).innerHTML=loops2();
+        //loops();
+    </script>
+    <button type="button"  onclick="loops1()">Clickme loop1</button>
+    <button type="button"  onclick="loops2()">Clickme loop2</button>
+</body>
+</html>

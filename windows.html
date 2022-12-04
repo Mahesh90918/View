@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Handling the Resize Event</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function displayWindowSize(){
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+            var txt = "Window size: width=" + w + ", height=" + h;
+            document.getElementById("result").innerHTML = txt;
+        }
+        window.onresize = displayWindowSize;
+    </script>
+    <p><strong>Note:</strong> Resize the browser window to see how the resize event works.</p>
+    <input type="text" placeholder="Hallticketno" id="htno_val" name="htno_val" maxlength="10" onblur="return validate_htno1(this.value)">
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+    <script>
+            function validate(){
+                clearErrors();
+                var flag = false;
+                var fname = document.getElementById("fname").value;
+                var lname = document.getElementById("lname").value;
+                var email = document.getElementById("email").value;
+                var phno = document.getElementById("phno").value;
+                var city = document.getElementById("city").value;
+               console.log(fname);
+                if(fname === ""){
+                    document.getElementById("fnameErr").innerText = "Fname is required!";
+                    flag = false;
+                }
+
+                if(lname === ""){
+                    document.getElementById("lnameErr").innerText = "Lname is required!";
+                    flag = false;
+                }
+
+                if(email === ""){
+                    document.getElementById("emailErr").innerText = "Email is required!";
+                    flag = false;
+                }
+
+                if(phno === ""){
+                    document.getElementById("phnoErr").innerText = "Phno is required!";
+                    flag = false;
+                }
+
+                if(city === ""){
+                    document.getElementById("cityErr").innerText = "City is required!";
+                    flag = false;
+                }
+                
+                return flag;
+            }
+
+            function clearErrors(){
+                document.getElementById("fnameErr").innerText = "";
+                document.getElementById("lnameErr").innerText = "";
+                document.getElementById("emailErr").innerText = "";
+                document.getElementById("cityErr").innerText = "";
+                document.getElementById("phnoErr").innerText = "";
+            }
+    </script>
+</head>
+<body>
+
+  <form name="userForm" action="#" method="post" onsubmit="return validate();">
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="fname" id="fname"> <span id="fnameErr" class="error"></span></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lname" id="lname"> <span id="lnameErr" class="error"></span></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" id="email"> <span id="emailErr" class="error"></span></td>
+        </tr>
+
+        <tr>
+            <td>Phno</td>
+            <td><input type="text" name="phno" id="phno"> <span id="phnoErr" class="error"></span></td>
+        </tr>
+
+        <tr>
+            <td>City</td>
+            <td><input type="text" name="city" id="city"> <span id="cityErr" class="error"></span></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Save"></td>
+            <td><input type="reset" value="Reset"></td>
+        </tr>
+
+    </table>
+  </form>
+   
+
+
+
+</body>
+</html>

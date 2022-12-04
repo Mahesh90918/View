@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title></title>
+    <style>
+         .error{
+            color: red;
+        }
+    </style>
+    <script>
+      function  validating() {//method chaning
+          clearErrors();
+            var flag = true;
+            var uUser = document.getElementById("fuser").value;
+            // alert("user"+User);
+            var upassword = document.getElementById("pwd").value;
+            var uEmail = document.getElementById("email").value;
+           //  console.log(User);
+            if (uUser === "") {
+                document.getElementById("EmptyUser").innerText ="Fname is required!";
+                flag = false;
+
+            } if (upassword === "" ) {
+                document.getElementById("Emptypassword").innerText = "Fname is required!";
+                flag = false;
+            } if (uEmail === "" ) {
+                document.getElementById("EmptyEmail").innerText = "Fname is required!";
+                flag = false;
+            }
+
+        return flag;
+        }
+
+        function clearErrors(){
+                document.getElementById("EmptyUser").innerText = "";
+                document.getElementById("Emptypassword").innerText = "";
+                document.getElementById("EmptyEmail").innerText = "";
+        }
+    </script>
+</head>
+
+<body>
+    <form action="./SirCopy.html" method="post" onsubmit="return validating();" >
+    <label for="nm">Name</label>
+      <input type="text" id="fuser" name="nm"><span id="EmptyUser" class="error"></span>
+           
+           <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd"><span id="Emptypassword" class="error"></span>
+      
+          <label for="email">Email</label>
+            <input type="email" id="email" name="email"><span id="EmptyEmail" class="error"></span><br>
+            
+        
+        
+            <input type="submit" value="LINK SUBMIT" >
+            <input type="reset" value="LINK Reset">
+            
+        
+        <!-- <button type="submit">submit</button>
+        <button type="reset">Reset</button> -->
+    
+    </form>
+</body>
+
+</html>
