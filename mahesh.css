@@ -1,0 +1,53 @@
+
+h1{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px;
+
+}
+.class{
+background: #c61875  no-repeat right;
+text-align-last: justify;
+}
+
+#dd{
+   text-decoration-line:overline ;
+   text-decoration-thickness: 10px;
+   margin: 50px;
+}
+
+#color{
+        text-decoration-color: red;
+        text-decoration-line: underline; 
+        text-decoration-style: wavy;
+        text-decoration-thickness:5px;
+        margin: 50px;
+}
+#color1{
+   text-decoration:overline dashed 10px rgb(97, 19, 69) ;
+   text-transform:uppercase ;
+   text-shadow: 2px 2px red;
+    margin: 50px;
+}
+#color2{
+    text-decoration:overline dashed 10px rgb(97, 19, 69) ;
+    text-transform:uppercase ;
+    line-height:50px ;
+    word-spacing:50px ;
+   
+     margin: 50px;
+ }
+#color3{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: italic;
+    font-variant: small-caps;
+}
+#color4{
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 30px;
+  
+}
+#color5{
+    font: italic bold 30px/40px Georgia, serif;
+}
