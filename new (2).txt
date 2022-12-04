@@ -1,0 +1,11 @@
+<!Doctype html>
+<html>
+<title style="colur:
+blue"> mahesh page </title>
+</html>
+<body>
+
+<img src="D:\godimages.jpg">mahesh</img>
+
+
+</body>
